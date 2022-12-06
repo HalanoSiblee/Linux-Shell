@@ -1,0 +1,4 @@
+#!/bin/sh
+#Simple calculator in shell Code By HalanoSiblee
+[ -z $* ] && exit
+echo $(($1))
