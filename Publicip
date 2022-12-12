@@ -1,5 +1,5 @@
 #!/bin/bash
-#Simple Bash to hande your publicip using ident.me,code by HalanoSiblee
+#Simple Bash to hande your publicip using curl & ident.me,code by HalanoSiblee
 [ -z $* ] && echo try arg show save list && exit
 if [ $1 == save ];then echo -e >> ~/publiciplist.dat;curl ident.me >> ~/publiciplist.dat  && exit;fi
 if [ $1 == list ];then cat ~/publiciplist.dat & exit;fi
